@@ -1,9 +1,9 @@
-num = input('Enter number : ')
-var1 = int(num)
-res1 = var1 // 100
-var2 = var1 % 100
+'''num = input('Enter number : ')
+num = int(num)
+res1 = num // 10
+var2 = num % 10
 res2 = var2 // 10
-res3 = var1 % 10
+res3 = num % 10
 mx = res1
 
 while True:
@@ -12,4 +12,15 @@ while True:
     if res3 > mx:
         mx = res3
     print(mx)
-    break
+    break'''
+
+num = int(input('Enter number : '))
+maxInt = 0
+
+while num != 0:
+    newNum = num % 10
+    if newNum > maxInt:
+        maxInt = newNum
+    num = num // 10
+print(maxInt)
+
