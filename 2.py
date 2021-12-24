@@ -1,7 +1,4 @@
-data = input('Input data list using space characters: ')
-for
-new_str = data.split(' ')
-print(new_str)
-'''for elem in data:
-    print(elem)
-'''
+data = input('Input data list using space characters: ').split(' ')
+for elem in range(1, len(data), 2):
+    data[elem-1], data[elem] = data[elem], data[elem-1]
+print(data)
